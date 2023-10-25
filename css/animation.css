@@ -1,0 +1,85 @@
+/* ANIM TITLE */
+
+.anim_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.anim_title {
+    width: fit-content;
+    height: 90px;
+    margin-left: 55px;
+    margin-top: 20px;
+    padding-left: 130px;
+    display: flex;
+}
+
+
+.anim_title img {
+    height: 90px;
+    align-self: center;
+}
+
+/* ANIM NAVEGATION */
+
+.anim_main {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.anim_nav {
+    width: fit-content;
+    margin-top: 15px;
+}
+
+
+.anim_nav ul {
+    margin-left: 53px;
+}
+
+
+.anim_nav ul li {
+    display: inline;
+    float: left;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+
+.anim_nav ul li a {  
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+
+.anim_nav ul li a:hover {  
+    color: #6B6B6B;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+
+  /* ANIMATION REEL */
+
+
+  .reel_video {
+    width: 100%;
+    height: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  }
+
+  .mobile_reel {
+    display: none;
+  }

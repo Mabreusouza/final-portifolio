@@ -1,0 +1,92 @@
+/* AS TITLE */
+
+.animated_shorts_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.animated_shorts_title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 165px;
+}
+
+
+/* AS VIDEOS */
+
+
+.animated_shorts_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 0.5rem;
+  padding-top: 50px;
+}
+
+.animated_shorts_gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  column-gap: 2rem;
+  grid-template-areas:'vid-1 vid-2'
+  'vid-3 vid-4';
+}
+
+.animated_shorts_gallery a {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.animated_shorts_gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .25);
+  opacity: 0;
+  transition: ease-in-out;
+}
+
+.animated_shorts_gallery a:hover i,
+.animated_shorts_gallery a:hover::before{
+  opacity: 1;
+}
+
+.vid-1 {
+  grid-area: vid-1;
+  background-image: url(../assets/Sharingrooots_thubnail.png);
+}
+
+.vid-2 {
+  grid-area: vid-2;
+  background-image: url(../assets/Birb_thumbnail.jpeg);
+}
+
+.vid-3 {
+  grid-area: vid-3;
+  background-image: url(../assets/yellow_thumbnail.png);
+}
+
+.vid-4 {
+  grid-area: vid-4;
+  background-image: url(../assets/Bigfoot_thumbnail.png);
+}

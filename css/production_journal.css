@@ -1,0 +1,40 @@
+/* PRODUCTION TITLE */
+
+.production_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.production_title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 165px;
+}
+
+
+/* PRODUCTION IMAGES */
+
+
+.production_coming_soon {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.production_coming_soon img {
+    height: 80px;
+    justify-self: center;
+    align-self: center;
+    padding-left: 75px;
+}
+

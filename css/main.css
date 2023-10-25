@@ -1,0 +1,346 @@
+a {
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.header_main {
+    width: 100%;
+    height: 100px;
+    background-color: #DBF087;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_title {
+    width: fit-content;
+    margin-left: 55px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.header_title img {
+    height: 80px;
+    align-self: center;
+}
+
+.header_nav {
+    width: 500px;
+    margin-top: 15px;
+}
+
+.header_nav ul {
+    margin-left: 53px;
+}
+
+.header_nav ul li {
+    display: inline;
+    float: left;
+    margin-right: 40px;
+}
+
+.header_nav ul li a {  
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.header_nav ul li a:hover {  
+  color: #6B6B6B;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+/* HOME - BIO */
+
+
+.home_bio {
+    width: 100%;
+    height: 600px;
+    background-color: #DBF087;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/home_gradient.png);
+    background-position: bottom;
+    background-size: cover;
+
+}
+
+.home_loop {
+    height: 500px;
+    width: 500px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-right: 75px;
+}
+
+.home_content {
+    width: fit-content;
+    height: 300px;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.hello {
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.home_text {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.thank_you {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding-bottom: 80px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 50px;
+}
+
+.home_social_media {
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.home_instagram {
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/Instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_linkedin {
+    width: 40px;
+    height: 40px;
+    background-image: url(../assets/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_twitter {
+    width: 25px;
+    height: 25px;
+    background-image: url(../assets/twitter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resume_btn {
+    background: black;
+    height: 60px;
+    width: 120px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+.resume_btn:hover {
+    background: #65ae86;
+    border-radius: 25px;
+    height: 60px;
+    width: 120px;
+    margin-left: 20px;
+    transition: all ease-in-out 100ms;
+}
+
+
+.resume_btn:hover p:hover {
+    color: black;
+}
+
+.resume_btn_text {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: white;
+    padding-left: 25px;
+    padding-top: 12px;
+}
+
+/* ANIMATION GIFS */
+
+
+.animation-GIF-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 0.5rem;
+    padding-top: 50px;
+  }
+  
+  .animation-GIF-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    grid-template-areas:'gif-2 gif-2 gif-1 gif-10'
+    'gif-6 gif-5 gif-7 gif-3'
+    'gif-9 gif-9 gif-8 gif-';
+  }
+  
+  .animation-GIF-gallery a {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .animation-GIF-gallery a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .25);
+    opacity: 0;
+    transition: ease-in-out;
+  }
+  
+  .animation-GIF-gallery a:hover i,
+  .animation-GIF-gallery a:hover::before{
+    opacity: 1;
+  }
+  
+  .gif-1 {
+    grid-area: gif-1;
+    background-image: url(../assets/Animation\ GIF\ -\ 1.gif);
+  }
+  
+  .gif-2 {
+    grid-area: gif-2;
+    background-image: url(../assets/Animation\ GIF\ -\ 2.gif);
+  }
+  
+  .gif-3 {
+    grid-area: gif-3;
+    background-image: url(../assets/Animation\ GIF\ -\ 3.gif);
+  }
+  
+  .gif-4 {
+    grid-area: gif-4;
+    background-image: url(../assets/Animation\ GIF\ -\ 4.gif);
+  }
+  
+  .gif-5 {
+    grid-area: gif-5;
+    background-image: url(../assets/Animation\ GIF\ -\ 6.gif);
+  }
+  
+  .gif-6 {
+    grid-area: gif-6;
+    background-image: url(../assets/Animation\ GIF\ -\ 7.gif);
+  }
+  
+  .gif-7 {
+    grid-area: gif-7;
+    background-image: url(../assets/Animation\ GIF\ -\ 8.gif);
+  }
+  
+  .gif-8 {
+    grid-area: gif-8;
+    background-image: url(../assets/Animation\ GIF\ -\ 9.gif);
+  }
+  
+  .gif-9 {
+    grid-area: gif-9;
+    background-image: url(../assets/Animation\ GIF\ -\ 13.gif);
+  }
+  
+  .gif-10 {
+    grid-area: gif-10;
+    background-image: url(../assets/Animation\ GIF\ -\ 11.gif);
+  }
+
+
+/* FOOTER */
+
+
+.main_footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/bottom_gradient.png);
+    background-position: bottom;
+    background-size: 700px;
+}
+
+
+.footer_social_media {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 15px;
+    padding-right: 150px;
+    margin-top: 50px;
+}
+
+.footer_instagram {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/Instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_linkedin {
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_twitter {
+    width: 15px;
+    height: 15px;
+    background-image: url(../assets/twitter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_email {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 150px;
+    padding-top: 15px;
+}
+
+.footer_decor {
+    width: 275px;
+    height: 275px;
+    align-self: flex-end;
+    padding-top: 15px;
+    margin-right: 120px;
+}
+

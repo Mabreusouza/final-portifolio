@@ -1,0 +1,165 @@
+/* IL TITLE */
+
+.il_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.il_title {
+    width: fit-content;
+    height: 90px;
+    margin-left: 55px;
+    margin-top: 20px;
+    padding-left: 130px;
+    display: flex;
+}
+
+
+.il_title img {
+    height: 90px;
+    align-self: center;
+}
+
+/* IL IMAGES */
+
+.il-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 0.5rem;
+    padding-top: 50px;
+  }
+  
+  .il-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    grid-template-areas:'il-1 il-2 il-3 il-4'
+    'il-5 il-6 il-7 il-8'
+    'il-9 il-10 il-11 il-12'
+    'il-13 il-14 il-15 il-16';
+  }
+  
+  .il-gallery a {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .il-gallery a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .25);
+    opacity: 0;
+    transition: ease-in-out;
+  }
+  
+  .il-gallery a:hover i,
+  .il-gallery a:hover::before{
+    opacity: 1;
+  }
+  
+  .il-1 {
+    grid-area: il-1;
+    background-image: url(../assets/IL\ -\ 1.png);
+  }
+  
+  .il-2 {
+    grid-area: il-2;
+    background-image: url(../assets/IL\ -\ 2.jpg);
+  }
+  
+  .il-3 {
+    grid-area: il-3;
+    background-image: url(../assets/IL\ -\ 3.jpeg);
+  }
+  
+  .il-4 {
+    grid-area: il-4;
+    background-image: url(../assets/IL\ -\ 4.png);
+  }
+  
+  .il-5 {
+    grid-area: il-5;
+    background-image: url(../assets/IL\ -\ 5.png);
+  }
+  
+  .il-6 {
+    grid-area: il-6;
+    background-image: url(../assets/IL\ -\ 6.png);
+  }
+  
+  .il-7 {
+    grid-area: il-7;
+    background-image: url(../assets/IL\ -\ 7.png);
+  }
+  
+  .il-8 {
+    grid-area: il-8;
+    background-image: url(../assets/IL\ -\ 8.png);
+  }
+  
+  .il-9 {
+    grid-area: il-9;
+    background-image: url(../assets/IL\ -\ 9.jpg);
+  }
+  
+  .il-10 {
+    grid-area: il-10;
+    background-image: url(../assets/IL\ -\ 10.png);
+  }
+
+  .il-11 {
+    grid-area: il-11;
+    background-image: url(../assets/IL\ -\ 11.png);
+  }
+
+  .il-12 {
+    grid-area: il-12;
+    background-image: url(../assets/IL\ -\ 12.jpg);
+  }
+
+  .il-13 {
+    grid-area: il-13;
+    background-image: url(../assets/IL\ -\ 13.png);
+  }
+
+  .il-14 {
+    grid-area: il-14;
+    background-image: url(../assets/IL\ -\ 15.jpg);
+  }
+
+  .il-15 {
+    grid-area: il-15;
+    background-image: url(../assets/IL\ -\ 16.png);
+  }
+
+  .il-16 {
+    grid-area: il-16;
+    background-image: url(../assets/IL\ -\ 17.png);
+  }
+
+  .il-17 {
+    grid-area: il-17;
+    background-image: url(../assets/IL\ -\ 18.png);
+  }
+
+

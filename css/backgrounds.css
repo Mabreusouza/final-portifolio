@@ -1,0 +1,149 @@
+/* BG TITLE */
+
+.backgrounds_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.backgrounds_title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 165px;
+}
+
+
+/* BG IMAGES */
+
+
+.backgrounds_container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 0.5rem;
+  padding-top: 50px;
+}
+
+.backgrounds_gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  grid-template-areas:'bg-1 bg-2 bg-3'
+  'bg-4 bg-5 bg-6'
+  'bg-7 bg-8 bg-9'
+  'bg-10 bg-11 bg-12'
+  'bg-13 bg-14 bg-15';
+}
+
+.backgrounds_gallery a {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.backgrounds_gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .25);
+  opacity: 0;
+  transition: ease-in-out;
+}
+
+.backgrounds_gallery a:hover i,
+.backgrounds_gallery a:hover::before{
+  opacity: 1;
+}
+
+.bg-1 {
+  grid-area: bg-1;
+  background-image: url(../assets/BG\ -\ 1.png);
+}
+
+.bg-2 {
+  grid-area: bg-2;
+  background-image: url(../assets/BG\ -\ 2.png);
+}
+
+.bg-3 {
+  grid-area: bg-3;
+  background-image: url(../assets/BG\ -\ 3.png);
+}
+
+.bg-4 {
+  grid-area: bg-4;
+  background-image: url(../assets/BG\ -\ 4.png);
+}
+
+.bg-5 {
+  grid-area: bg-5;
+  background-image: url(../assets/BG\ -\ 5.png);
+}
+
+.bg-6 {
+  grid-area: bg-6;
+  background-image: url(../assets/BG\ -\ 6.jpeg);
+}
+
+.bg-7 {
+  grid-area: bg-7;
+  background-image: url(../assets/BG\ -\ 7.jpeg);
+}
+
+.bg-8 {
+  grid-area: bg-8;
+  background-image: url(../assets/BG\ -\ 8.jpeg);
+}
+
+.bg-9 {
+  grid-area: bg-9;
+  background-image: url(../assets/BG\ -\ 9.png);
+}
+
+.bg-10 {
+  grid-area: bg-10;
+  background-image: url(../assets/BG\ -\ 10.png);
+}
+
+.bg-11 {
+  grid-area: bg-11;
+  background-image: url(../assets/BG\ -\ 11.jpeg);
+}
+
+.bg-12 {
+  grid-area: bg-12;
+  background-image: url(../assets/BG\ -\ 12.jpg);
+}
+
+.bg-13 {
+  grid-area: bg-13;
+  background-image: url(../assets/BG\ -\ 13.png);
+}
+
+.bg-14 {
+  grid-area: bg-14;
+  background-image: url(../assets/BG\ -\ 14.png);
+}
+
+.bg-15 {
+  grid-area: bg-15;
+  background-image: url(../assets/BG\ -\ 15.png);
+}

@@ -1,0 +1,32 @@
+/* ANIMATIC TITLE */
+
+.animatic_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.animatic_title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 165px;
+}
+
+
+/* ANIMATIC VIDEO */
+
+
+.animatic_video {
+  width: 100%;
+  height: 500px;
+display: flex;
+align-content: center;
+justify-content: center;
+}

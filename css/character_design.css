@@ -1,0 +1,138 @@
+/* CS TITLE */
+
+.character_design_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.character_design_title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 165px;
+}
+
+
+/* CS IMAGES */
+
+
+.character_design_container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 0.5rem;
+  padding-top: 50px;
+}
+
+.character_design_gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  grid-template-areas:'cd-1 cd-1 cd-2 cd-3'
+  'cd-4 cd-5 cd-7 cd-6'
+  'cd-8 cd-10 cd-11 cd-9'
+  'cd-12 cd-13 cd-0 cd-0';
+}
+
+.character_design_gallery a {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.character_design_gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .25);
+  opacity: 0;
+  transition: ease-in-out;
+}
+
+.character_design_gallery a:hover i,
+.character_design_gallery a:hover::before{
+  opacity: 1;
+}
+
+.cd-1 {
+  grid-area: cd-1;
+  background-image: url(../assets/cd-1.png);
+}
+
+.cd-2 {
+  grid-area: cd-2;
+  background-image: url(../assets/cd-2.png);
+}
+
+.cd-3 {
+  grid-area: cd-3;
+  background-image: url(../assets/cd-3.gif);
+}
+
+.cd-4 {
+  grid-area: cd-4;
+  background-image: url(../assets/cd-4.png);
+}
+
+.cd-5 {
+  grid-area: cd-5;
+  background-image: url(../assets/cd-5.png);
+}
+
+.cd-6 {
+  grid-area: cd-6;
+  background-image: url(../assets/cd-6.png);
+}
+
+.cd-7 {
+  grid-area: cd-7;
+  background-image: url(../assets/cd-7.png);
+}
+
+.cd-8 {
+  grid-area: cd-8;
+  background-image: url(../assets/cd-8.png);
+}
+
+.cd-9 {
+  grid-area: cd-9;
+  background-image: url(../assets/cd-9.png);
+}
+
+.cd-10 {
+  grid-area: cd-10;
+  background-image: url(../assets/cd-10.png);
+}
+
+.cd-11 {
+  grid-area: cd-11;
+  background-image: url(../assets/cd-11.jpeg);
+}
+
+.cd-12 {
+  grid-area: cd-12;
+  background-image: url(../assets/cd-12.png);
+}
+
+.cd-13 {
+  grid-area: cd-13;
+  background-image: url(../assets/cd-13.png.jpeg);
+}

@@ -1,0 +1,128 @@
+/* ST TITLE */
+
+.th_storyboards_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.th_storyboards_title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 165px;
+}
+
+
+/* ST IMAGES */
+
+
+.th_storyboard_container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 0.5rem;
+  padding-top: 50px;
+}
+
+.th_storyboard_gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  grid-template-areas:'ts-1 ts-2 ts-3'
+  'ts-4 ts-5 ts-6'
+  'ts-7 ts-8 ts-9'
+  'ts-10 ts-11 ts-12';
+}
+
+.th_storyboard_gallery a {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.th_storyboard_gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .25);
+  opacity: 0;
+  transition: ease-in-out;
+}
+
+.th_storyboard_gallery a:hover i,
+.th_storyboard_gallery a:hover::before{
+  opacity: 1;
+}
+
+.ts-1 {
+  grid-area: ts-1;
+  background-image: url(../assets/th_storyboard_1.PNG);
+}
+
+.ts-2 {
+  grid-area: ts-2;
+  background-image: url(../assets/th_storyboard_2.PNG);
+}
+
+.ts-3 {
+  grid-area: ts-3;
+  background-image: url(../assets/th_storyboard_3.PNG);
+}
+
+.ts-4 {
+  grid-area: ts-4;
+  background-image: url(../assets/th_storyboard_5.PNG);
+}
+
+.ts-5 {
+  grid-area: ts-5;
+  background-image: url(../assets/th_storyboard_6.PNG);
+}
+
+.ts-6 {
+  grid-area: ts-6;
+  background-image: url(../assets/th_storyboard_7.PNG);
+}
+
+.ts-7 {
+  grid-area: ts-7;
+  background-image: url(../assets/th_storyboard_8.PNG);
+}
+
+.ts-8 {
+  grid-area: ts-8;
+  background-image: url(../assets/th_storyboard_9.PNG);
+}
+
+.ts-9 {
+  grid-area: ts-9;
+  background-image: url(../assets/th_storyboard_10.PNG);
+}
+
+.ts-10 {
+  grid-area: ts-10;
+  background-image: url(../assets/th_storyboard_11.PNG);
+}
+
+.ts-11 {
+  grid-area: ts-11;
+  background-image: url(../assets/th_storyboard_12.PNG);
+}

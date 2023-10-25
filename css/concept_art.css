@@ -1,0 +1,133 @@
+/* CA TITLE */
+
+.concept_art_section {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-image: url(../assets/header_gradient.png);
+    width: 100%;
+    background-position: top;
+    background-size: 500px;
+    background-repeat: repeat-x;
+}
+
+.concept_art_title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 165px;
+}
+
+
+/* CA IMAGES */
+
+
+
+.concept_container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 0.5rem;
+  padding-top: 50px;
+}
+
+.concept_gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  grid-template-areas:'ca-1 ca-2 ca-2 ca-3'
+  'ca-4 ca-10 ca-9 ca-5'
+  'ca-6 ca-7 ca-12 ca-11';
+}
+
+.concept_gallery a {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.concept_gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .25);
+  opacity: 0;
+  transition: ease-in-out;
+}
+
+.concept_gallery a:hover i,
+.concept_gallery a:hover::before{
+  opacity: 1;
+}
+
+.ca-1 {
+  grid-area: ca-1;
+  background-image: url(../assets/ca-1.jpeg);
+}
+
+.ca-2 {
+  grid-area: ca-2;
+  background-image: url(../assets/ca-2.PNG);
+}
+
+.ca-3 {
+  grid-area: ca-3;
+  background-image: url(../assets/ca-3.gif);
+}
+
+.ca-4 {
+  grid-area: ca-4;
+  background-image: url(../assets/ca-4.gif);
+}
+
+.ca-5 {
+  grid-area: ca-5;
+  background-image: url(../assets/ca-5.png);
+}
+
+.ca-6 {
+  grid-area: ca-6;
+  background-image: url(../assets/ca-6.png);
+}
+
+.ca-7 {
+  grid-area: ca-7;
+  background-image: url(../assets/ca-7.png);
+}
+
+.ca-8 {
+  grid-area: ca-8;
+  background-image: url(../assets/ca-8.png);
+}
+
+.ca-9 {
+  grid-area: ca-9;
+  background-image: url(../assets/ca-9.png);
+}
+
+.ca-10 {
+  grid-area: ca-10;
+  background-image: url(../assets/ca-10.PNG);
+}
+
+.ca-11 {
+  grid-area: ca-11;
+  background-image: url(../assets/ca-11.PNG);
+}
+
+.ca-12 {
+  grid-area: ca-12;
+  background-image: url(../assets/ca-13.PNG);
+}
